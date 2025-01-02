@@ -1,0 +1,70 @@
+
+================== ASTRAL-Pro ===================== 
+
+This is ASTRAL-Pro (A-Pro) version 1.1.6
+Using native AVX batch computing.
+Gene trees are treated as unrooted
+There are 8 threads used to run.
+ti: 3
+tx: 3
+pw: 4
+The number of input tree read is 843
+13488 trees read from sorted_trees_843genes.tre
+843 extra trees.
+All output trees will be *arbitrarily* rooted at KVEN1
+
+======== Running the main analysis
+Number of taxa: 18 (18 species)
+Taxa: [KVEN1, RSYL1, CBIC1, DRYU1, SPOL1, GIRA1, GQUA1, IREZ1, LERN1, OBRA1, OCAR1, ONUN, MIGR1, MISC1, MIPL1, MTER1, MNAN1, BKEW1]
+Taxon occupancy: {SPOL1=13488, MNAN1=13488, DRYU1=13488, MIPL1=13488, GIRA1=13488, LERN1=13488, BKEW1=13488, KVEN1=13488, OCAR1=13488, GQUA1=13488, MIGR1=13488, RSYL1=13488, CBIC1=13488, OBRA1=13488, IREZ1=13488, MTER1=13488, MISC1=13488, ONUN=13488}
+Using polytree-based weight calculation.
+Number of gene trees: 13488
+0 trees have missing taxa
+Calculating distance matrix (for completion of X) ....with 4 distance matrices in parallel
+Species tree distances calculated ...
+
+Building set of clusters (X) from gene trees 
+------------------------------
+Number of Clusters after addition by distance: 265
+Adding to X using resolutions of greedy consensus ...
+
+Computing greedy consensus  took 0 seconds
+Limit for sigma of degrees:500
+
+polytomy size limit : > 4
+ [3, 3, 4]
+discarded polytomies: 
+Threshold 0.0:
+Threshold 0.01:
+Threshold 0.02:
+Threshold 0.05:
+Threshold 0.1:
+Threshold 0.2:
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 265
+Threshold 0.3333333333333333:
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 265
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 265
+Number of Clusters after addition by greedy: 265
+calculating extra bipartitions from extra input trees ...
+Number of Clusters after additions from extra trees: 265
+partitions formed in 3.567 secs
+Dynamic Programming starting after 3.567 secs
+Polytree max score: 2579580
+Polytree building time: 0.191 seconds.
+Number of quartet trees in the gene trees: 2579580
+Computing hash values took 0 seconds
+Size of largest cluster: 18
+Total Number of elements: 438
+Final optimization score: 0
+Size of largest cluster: 18
+439 0 128
+Total Number of elements: 438
+Normalized score (portion of input quartet trees satisfied before correcting for multiple individuals): 0.8647198381131812
+Final optimization score: 2230614
+Optimal tree inferred in 4.874 secs.
+Weight calculation cumulatively took 0.002616916 secs
+(KVEN1,(RSYL1,(CBIC1,(((GQUA1,((ONUN,(OBRA1,OCAR1)),(IREZ1,LERN1))),(GIRA1,(DRYU1,SPOL1))),(BKEW1,(MNAN1,((MISC1,MIPL1),(MIGR1,MTER1))))))));
+Final quartet score is: 2230614
+Final normalized quartet score is: 0.8647198381131812
+(KVEN1,(RSYL1,(CBIC1,(((GQUA1,((ONUN,(OBRA1,OCAR1)1:0.460569597012377)1:5.23407509781968,(IREZ1,LERN1)1:5.678760919081136)1:0.43805501015835097)1:5.964962606362463,(GIRA1,(DRYU1,SPOL1)1:2.4614863755799012)1:0.849967296941977)0.72:0.03793402154883834,(BKEW1,(MNAN1,((MISC1,MIPL1)0.44:0.010763542259490328,(MIGR1,MTER1)0.91:0.04655628672502454)1:0.5366296357224208)1:6.332687386487759)1:1.0540059944566154)1:3.281135042836111)1:2.2562805249523596));
+ASTRAL-Pro finished in 5.501 secs

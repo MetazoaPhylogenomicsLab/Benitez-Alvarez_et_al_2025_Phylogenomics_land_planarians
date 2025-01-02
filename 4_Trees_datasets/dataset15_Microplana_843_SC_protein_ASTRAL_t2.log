@@ -1,0 +1,68 @@
+
+================== ASTRAL-Pro ===================== 
+
+This is ASTRAL-Pro (A-Pro) version 1.1.6
+Using native AVX batch computing.
+Gene trees are treated as unrooted
+There are 8 threads used to run.
+ti: 3
+tx: 3
+pw: 4
+The number of input tree read is 842
+13472 trees read from all_gene_trees_843prot_Microplana.tree
+842 extra trees.
+All output trees will be *arbitrarily* rooted at MIGR1
+
+======== Running the main analysis
+Number of taxa: 5 (5 species)
+Taxa: [MIGR1, MTER1, MIPL1, MISC1, MNAN1]
+Taxon occupancy: {MNAN1=13472, MIGR1=13472, MIPL1=13472, MTER1=13472, MISC1=13472}
+Using polytree-based weight calculation.
+Number of gene trees: 13472
+0 trees have missing taxa
+Calculating distance matrix (for completion of X) ....with 4 distance matrices in parallel
+Species tree distances calculated ...
+
+Building set of clusters (X) from gene trees 
+------------------------------
+Number of Clusters after addition by distance: 31
+Adding to X using resolutions of greedy consensus ...
+
+Computing greedy consensus  took 0 seconds
+Limit for sigma of degrees:175
+
+polytomy size limit : > 4
+ [4]
+discarded polytomies: 
+Threshold 0.0:
+Threshold 0.01:
+Threshold 0.02:
+Threshold 0.05:
+Threshold 0.1:
+Threshold 0.2:
+Threshold 0.3333333333333333:
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 31
+Number of Clusters after addition by greedy: 31
+calculating extra bipartitions from extra input trees ...
+Number of Clusters after additions from extra trees: 31
+partitions formed in 1.048 secs
+Dynamic Programming starting after 1.048 secs
+Polytree max score: 4210
+Polytree building time: 0.07 seconds.
+Number of quartet trees in the gene trees: 4210
+Computing hash values took 0 seconds
+Size of largest cluster: 5
+Total Number of elements: 25
+Final optimization score: 0
+Size of largest cluster: 5
+26 0 0
+Total Number of elements: 25
+Normalized score (portion of input quartet trees satisfied before correcting for multiple individuals): 0.3657957244655582
+Final optimization score: 1540
+Optimal tree inferred in 2.189 secs.
+Weight calculation cumulatively took 8.4438E-5 secs
+(MIGR1,((MTER1,MIPL1),(MISC1,MNAN1)));
+Final quartet score is: 1540
+Final normalized quartet score is: 0.3657957244655582
+(MIGR1,((MTER1,MIPL1)'[q1=0.3687648456057007;q2=0.3141330166270784;q3=0.3171021377672209;f1=310.5;f2=264.5;f3=267.0;pp1=0.9539051278341306;pp2=0.021974004608611614;pp3=0.024120867557237705;QC=2;EN=842.0]':0.05391895231011092,(MISC1,MNAN1)'[q1=0.3527315914489311;q2=0.32779097387173395;q3=0.3194774346793349;f1=297.0;f2=276.0;f3=269.0;pp1=0.7280056671280072;pp2=0.15738138150753275;pp3=0.11461295136432388;QC=2;EN=842.0]':0.028882874148785938));
+ASTRAL-Pro finished in 2.431 secs

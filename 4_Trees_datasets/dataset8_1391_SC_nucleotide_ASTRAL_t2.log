@@ -1,0 +1,70 @@
+
+================== ASTRAL-Pro ===================== 
+
+This is ASTRAL-Pro (A-Pro) version 1.1.6
+Using native AVX batch computing.
+Gene trees are treated as unrooted
+There are 8 threads used to run.
+ti: 3
+tx: 3
+pw: 4
+The number of input tree read is 1391
+22256 trees read from sorted_trees_1391genes.tre
+1391 extra trees.
+All output trees will be *arbitrarily* rooted at KVEN1
+
+======== Running the main analysis
+Number of taxa: 18 (18 species)
+Taxa: [KVEN1, RSYL1, CBIC1, DRYU1, SPOL1, GIRA1, GQUA1, IREZ1, LERN1, OBRA1, OCAR1, ONUN, MIGR1, MIPL1, MISC1, MTER1, MNAN1, BKEW1]
+Taxon occupancy: {SPOL1=22256, MNAN1=22256, DRYU1=22256, MIPL1=22256, GIRA1=22256, LERN1=22256, BKEW1=22256, KVEN1=22256, OCAR1=22256, GQUA1=22256, MIGR1=22256, RSYL1=22256, CBIC1=22256, OBRA1=22256, IREZ1=22256, MTER1=22256, MISC1=22256, ONUN=22256}
+Using polytree-based weight calculation.
+Number of gene trees: 22256
+0 trees have missing taxa
+Calculating distance matrix (for completion of X) ....with 4 distance matrices in parallel
+Species tree distances calculated ...
+
+Building set of clusters (X) from gene trees 
+------------------------------
+Number of Clusters after addition by distance: 335
+Adding to X using resolutions of greedy consensus ...
+
+Computing greedy consensus  took 0 seconds
+Limit for sigma of degrees:500
+
+polytomy size limit : > 4
+ [3, 4, 4]
+discarded polytomies: 
+Threshold 0.0:
+Threshold 0.01:
+Threshold 0.02:
+Threshold 0.05:
+Threshold 0.1:
+Threshold 0.2:
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 335
+Threshold 0.3333333333333333:
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 335
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 335
+Number of Clusters after addition by greedy: 335
+calculating extra bipartitions from extra input trees ...
+Number of Clusters after additions from extra trees: 335
+partitions formed in 4.569 secs
+Dynamic Programming starting after 4.569 secs
+Polytree max score: 4256460
+Polytree building time: 0.334 seconds.
+Number of quartet trees in the gene trees: 4256460
+Computing hash values took 0 seconds
+Size of largest cluster: 18
+Total Number of elements: 702
+Final optimization score: 0
+Size of largest cluster: 18
+703 0 0
+Total Number of elements: 702
+Normalized score (portion of input quartet trees satisfied before correcting for multiple individuals): 0.8648029113394698
+Final optimization score: 3680999
+Optimal tree inferred in 6.044 secs.
+Weight calculation cumulatively took 0.004014591 secs
+(KVEN1,(RSYL1,(CBIC1,((GQUA1,((IREZ1,LERN1),(ONUN,(OBRA1,OCAR1)))),((BKEW1,(MNAN1,((MIPL1,MISC1),(MIGR1,MTER1)))),(GIRA1,(DRYU1,SPOL1)))))));
+Final quartet score is: 3680999
+Final normalized quartet score is: 0.8648029113394698
+(KVEN1,(RSYL1,(CBIC1,((GQUA1,((IREZ1,LERN1)'[q1=0.998009179892717;q2=0.001327213404855389;q3=6.636067024276945E-4;f1=1388.2307692307693;f2=1.8461538461538463;f3=0.9230769230769231;pp1=1.0;pp2=0.0;pp3=0.0;QC=39;EN=1391.0]':5.506160792137115,(ONUN,(OBRA1,OCAR1)'[q1=0.5882578480709322;q2=0.1952072849269111;q3=0.2165348670021567;f1=818.2666666666667;f2=271.53333333333336;f3=301.2;pp1=1.0;pp2=0.0;pp3=0.0;QC=15;EN=1391.0]':0.48086702048986557)'[q1=0.9962948625781121;q2=0.0027097273682464194;q3=9.954100536415417E-4;f1=1385.8461538461538;f2=3.769230769230769;f3=1.3846153846153846;pp1=1.0;pp2=0.0;pp3=0.0;QC=52;EN=1391.0]':5.015954455573838)'[q1=0.4766355140186916;q2=0.26599568655643424;q3=0.2573687994248742;f1=663.0;f2=370.0;f3=358.0;pp1=1.0;pp2=2.420256384865292E-28;pp3=2.1588860402528157E-28;QC=72;EN=1391.0]':0.2413580007775423)'[q1=1.0;q2=0.0;q3=0.0;f1=1391.0;f2=0.0;f3=0.0;pp1=1.0;pp2=0.0;pp3=0.0;QC=135;EN=1391.0]':6.833031732786231,((BKEW1,(MNAN1,((MIPL1,MISC1)'[q1=0.35103214542466876;q2=0.32843791722296395;q3=0.32052993735236723;f1=488.2857142857143;f2=456.85714285714283;f3=445.85714285714283;pp1=0.7932098192417253;pp2=0.12240956157650192;pp3=0.08438061918159614;QC=28;EN=1391.0]':0.026518477975919733,(MIGR1,MTER1)'[q1=0.3579387901817809;q2=0.3062288179110609;q3=0.3358323919071583;f1=497.89285714285717;f2=425.9642857142857;f3=467.14285714285717;pp1=0.8949901886462829;pp2=0.022284282222584596;pp3=0.08272552913113257;QC=28;EN=1391.0]':0.0372061181973593)'[q1=0.544392523364486;q2=0.22214234363767074;q3=0.23346513299784327;f1=757.25;f2=309.0;f3=324.75;pp1=1.0;pp2=0.0;pp3=1.3834621181869126E-58;QC=52;EN=1391.0]':0.37980051220141264)'[q1=1.0;q2=0.0;q3=0.0;f1=1391.0;f2=0.0;f3=0.0;pp1=1.0;pp2=0.0;pp3=0.0;QC=48;EN=1391.0]':6.833031732786231)'[q1=0.7695236573741246;q2=0.10751657480629442;q3=0.1229597678195809;f1=1070.4074074074074;f2=149.55555555555554;f3=171.03703703703704;pp1=1.0;pp2=0.0;pp3=0.0;QC=135;EN=1391.0]':1.0597462287298844,(GIRA1,(DRYU1,SPOL1)'[q1=0.9669302659956865;q2=0.012413132039300263;q3=0.02065660196501318;f1=1345.0;f2=17.266666666666666;f3=28.733333333333334;pp1=1.0;pp2=0.0;pp3=0.0;QC=15;EN=1391.0]':2.9828841310761427)'[q1=0.7053478712357217;q2=0.15197566365790666;q3=0.14267646510637164;f1=981.1388888888889;f2=211.39814814814815;f3=198.46296296296296;pp1=1.0;pp2=0.0;pp3=0.0;QC=108;EN=1391.0]':0.8147765045709405)'[q1=0.4133184226642171;q2=0.29907873365817295;q3=0.28760284367761;f1=574.925925925926;f2=416.01851851851853;f3=400.05555555555554;pp1=0.9999999991061945;pp2=5.021888528085606E-10;pp3=3.916164759776434E-10;QC=324;EN=1391.0]':0.1273019760947666)'[q1=0.9231568016614745;q2=0.014458023803818196;q3=0.06238517453470724;f1=1284.111111111111;f2=20.11111111111111;f3=86.77777777777777;pp1=1.0;pp2=0.0;pp3=0.0;QC=108;EN=1391.0]':2.1519298418310955)'[q1=0.8572250179726816;q2=0.07121974598610112;q3=0.07155523604121734;f1=1192.4;f2=99.06666666666666;f3=99.53333333333333;pp1=1.0;pp2=0.0;pp3=0.0;QC=15;EN=1391.0]':1.5367163689088377));
+ASTRAL-Pro finished in 7.099 secs
